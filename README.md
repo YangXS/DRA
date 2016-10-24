@@ -15,7 +15,7 @@ https://filebox.ece.vt.edu/~parikh/relative_attributes/relative_attributes_v2.zi
 
 4.Run run_ReNet.m
 
-the prospective result on osr: 0.9770 and on pubfig: 0.9057.
+The prospective result on osr: 0.9770 and on pubfig: 0.9057.
 
 Note that increase n_tr_pairs will improve the performance.
 
