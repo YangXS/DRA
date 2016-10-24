@@ -31,8 +31,6 @@ createImageList(pathRoot, datasetName);
 createImagePath(pathRoot, datasetName);
 
 
-
-
 train_ReNet(datasetName, imagesRoot, ...
     data_root, N_att, version, n_tr_pairs,...
     n_te_pairs, batch_size, iterN, batchN_te);
