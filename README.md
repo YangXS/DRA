@@ -1,5 +1,5 @@
 # DRA
-code for the paper deep relative attributes
+Code for the paper deep relative attributes
 
 1. Make revised caffe:
 
