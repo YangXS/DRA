@@ -1,7 +1,7 @@
 # DRA
 Code for the paper deep relative attributes (http://yangxs.cc/publications/DRA.pdf)
 
-###1. Make revised caffe:
+###1. Make revised caffe_20160725:
 
 sudo make all [-j8]
 
