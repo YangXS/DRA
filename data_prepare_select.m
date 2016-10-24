@@ -1,29 +1,12 @@
-
-% clear all;
-% close all;
 function data_prepare_select(datasetName, version, imagesRoot, N_attr)
-% ���������Ϊzero-shot learning �� ׼�����
 
-%ָʾ��������ĸ���ݼ���
-% datasetName = 'osr';
-% version = 1;
-% ����ͼ�� ���ļ���
-% ROOT = ['D:\data\attribute\relative_attributes_v2\relative_attributes\' datasetName '\images\'];
 ROOT = imagesRoot;
 
 
-
-% ָʾattribute������
-% N_attr = 6;
-
 for k_attr = 1:N_attr
-    % % ָʾ��ǰ�Ĵ�����ǵڼ���attribute
-    % k_attr = 1;
-    
-    % ������������
+
     nn = [datasetName '_v' num2str(version) '_attr' num2str(k_attr) ];
     
-    %�м���ɵ��ļ����ļ���ǰ׺
     prefixData = ['./data/'];
     BIN_root = './caffe_20160725/build/tools/';
     BIN_cvt = [BIN_root, 'convert_imageset_siamese_data'];

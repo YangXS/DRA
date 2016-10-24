@@ -1,17 +1,24 @@
-% ѵ��model����ȡfeat���������۽��
-
 clear all;
 close all;
 clc;
 
 
-%ָʾ��������ĸ���ݼ���
 datasetName = 'osr';
-% ָʾ��ǰ�Ĵ�����ǵڼ���attribute
+% number of attributes
 N_att = 6;% osr: 6, pubfig: 11
 version = 100;
 n_tr_pairs = 500
-% ָʾ��ǰ�����г���İ汾
+n_te_pairs = 20;% this is used for validation for training cnn model,
+if n_tr_pairs < 100;
+    batch_size = 10;%
+else
+    batch_size = 32;
+end
+iterN = 4000;%
+n_images = 2689;% osr: 2689, pubfig: 772
+batchN_te = ceil(n_images/100); 
+% batch_size is set to 100 when extract the attribute values
+% version tags
 version = version + 1
 
 
@@ -23,21 +30,14 @@ data_root = [pathRoot datasetName '/data.mat'];
 createImageList(pathRoot, datasetName);
 createImagePath(pathRoot, datasetName);
 
-n_te_pairs = 20;% this is used for validation for training cnn model,
-if n_tr_pairs < 100;
-    batch_size = 10;% Ĭ��64
-else
-    batch_size = 32;
-end
-iterN = 4000;% Ĭ��5000��ָ��ѵ��������
-batchN_te = 27; % ͼ�񼯵�ʵ�ʴ�С < batchN_te * batch_size���ɣ�
+
 
 
 train_ReNet(datasetName, imagesRoot, ...
     data_root, N_att, version, n_tr_pairs,...
     n_te_pairs, batch_size, iterN, batchN_te);
 
-%% ����feat
+%% feat
 evaluation_ReNet(data_root, N_att, version, iterN, datasetName);
 
 % osr res:

@@ -1,12 +1,9 @@
 function findAppend(filename, tabs)
-% 找到tabs中的每个str，并在后面添加参数
-% 要求：原来的filename中必须是参数：后面没有字符，直接换行了，
-% 先把filename文件中的所有行都读进来
 lines = {};
 fid = fopen(filename,'r');
-n = 0; % 保存总的行数
+n = 0;
 while 1
-    line = fgetl(fid); % fgetl函数把换行省略了，
+    line = fgetl(fid);
     if ~ischar(line)
         break;
     end
@@ -15,8 +12,7 @@ while 1
 end
 fclose(fid);
 
-% 然后在每行的字符串中查找和替换
-k = 1; % 指示在table中第k行的替换
+k = 1;
 replaceNum = length(tabs);
 for i = 1:n
     line = lines{i};
@@ -32,7 +28,6 @@ for i = 1:n
     end
 end
 
-% 最后再把所有行写回到文件，
 fid = fopen(filename,'w');
 for i = 1:n
     fprintf(fid, '%s\n', lines{i});

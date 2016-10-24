@@ -1,6 +1,4 @@
 function createImageList(pathRoot, datasetName)
-% ����ͼ���ļ��б�
-% img_root = '/mnt/pan/D_windows/data/attribute/relative_attributes_v2/relative_attributes/osr/images/';
 dirs_img = dir([pathRoot datasetName '/images/*.jpg']);
 fileName = ['./data/' datasetName '_list.txt'];
 fid = fopen(fileName, 'w');

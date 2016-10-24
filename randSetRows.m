@@ -1,5 +1,4 @@
 function O_S_array = randSetRows(O_S_array)
-% O_S_array是一个矩阵的
 n = length(O_S_array);
 
 for i = 1:n
