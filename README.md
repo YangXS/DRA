@@ -1,6 +1,8 @@
 # DRA
 Code for the paper deep relative attributes (http://yangxs.cc/publications/DRA.pdf)
 
+The code has been tested on 64bit ubuntu 12.04. The GPU is Titan Black Z with CUDA 7.0.
+
 ###1. Make revised caffe_20160725:
 
 sudo make all [-j8]
