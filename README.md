@@ -24,12 +24,7 @@ Note that increase n_tr_pairs will improve the performance.
 Please cite the following paper if it helps your research:
 
     @article{DBLP:journals/tmm/YangZXYHG16,
-      author    = {Xiaoshan Yang and
-               Tianzhu Zhang and
-               Changsheng Xu and
-               Shuicheng Yan and
-               M. Shamim Hossain and
-               Ahmed Ghoneim},
+      author    = {Xiaoshan Yang and Tianzhu Zhang and Changsheng Xu and Shuicheng Yan and M. Shamim Hossain and Ahmed Ghoneim},
       title     = {Deep Relative Attributes},
       journal   = {{IEEE} Trans. Multimedia},
       volume    = {18},
