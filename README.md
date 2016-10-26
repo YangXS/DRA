@@ -19,7 +19,7 @@ https://filebox.ece.vt.edu/~parikh/relative_attributes/relative_attributes_v2.zi
 
 The prospective average result on osr: 0.97 and on pubfig: 0.90.
 
-Note that performance can be improved by increasing n_tr_pairs.
+Note that the performance can be improved by increasing n_tr_pairs.
 
 Please cite the following paper if it helps your research:
 
