@@ -5,7 +5,7 @@ Code for the paper deep relative attributes (http://yangxs.cc/publications/DRA.p
 
 The attribute annotations of the OSR and Pubfig dataset are:
 
-![](osr.png) ![](Pubfig.png)
+![](osr.png) ![](pubfig.png)
 
 The code has been tested on 64bit ubuntu 12.04. The GPU is Titan Black Z with CUDA 7.0.
 
