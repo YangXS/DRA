@@ -3,10 +3,6 @@ Code for the paper deep relative attributes (http://yangxs.cc/publications/DRA.p
 
 ![](DRA.png)
 
-The attribute annotations of the OSR and Pubfig dataset are:
-
-![](osr.png) ![](pubfig.png)
-
 The code has been tested on 64bit ubuntu 12.04. The GPU is Titan Black Z with CUDA 7.0.
 
 ###1. Make revised caffe_20160725:
@@ -20,6 +16,10 @@ http://dl.caffe.berkeleyvision.org/bvlc_reference_caffenet.caffemodel
 ###3. Download the image dataset and revise the dataset directory in the run_ReNet.m
 
 https://filebox.ece.vt.edu/~parikh/relative_attributes/relative_attributes_v2.zip
+
+The attribute annotations of the OSR and Pubfig dataset are:
+
+![](osr.png) ![](pubfig.png)
 
 ###4. Run run_ReNet.m
 
