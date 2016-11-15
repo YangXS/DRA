@@ -30,12 +30,12 @@ data_root = [pathRoot datasetName '/data.mat'];
 createImageList(pathRoot, datasetName);
 createImagePath(pathRoot, datasetName);
 
-
+%% train the CNN model and extract the relative/ranking scores for all test images
 train_ReNet(datasetName, imagesRoot, ...
     data_root, N_att, version, n_tr_pairs,...
     n_te_pairs, batch_size, iterN, batchN_te);
 
-%% feat
+%% evaluate the relative/ranking scores of test images
 evaluation_ReNet(data_root, N_att, version, iterN, datasetName);
 
 % osr res:
