@@ -17,7 +17,7 @@ http://dl.caffe.berkeleyvision.org/bvlc_reference_caffenet.caffemodel
 
 https://filebox.ece.vt.edu/~parikh/relative_attributes/relative_attributes_v2.zip
 
-The attribute annotations of the OSR and Pubfig dataset are:
+The attribute annotations of the OSR and Pubfig datasets are:
 
 ![](osr.png) ![](pubfig.png)
 
