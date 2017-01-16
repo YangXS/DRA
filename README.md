@@ -1,5 +1,5 @@
 # DRA
-Code for the paper deep relative attributes (http://yangxs.cc/publications/DRA.pdf)
+Code for the paper deep relative attributes (http://yangxs.ac.cn/publications/DRA.pdf)
 
 ![](DRA.png)
 
